@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+
+    .canvas__screen {
+        width: 800px;
+        height: 600px;
+        border: 1px solid black;
+    }
+
+    .canvas__menu {
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+
+        .menu__color {
+            cursor: pointer;
+        }
+
+        .menu__line-width {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .menu__btn {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .style-btn {
+            padding: 10px 40px;
+            margin-top: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    }
+}

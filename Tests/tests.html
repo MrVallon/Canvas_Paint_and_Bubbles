@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tests</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <div class="container canvas" style="display: none;">
+		<div class="canvas__screen">
+			<canvas width="800" height="600" id="canvas" style="border: 1px solid black"></canvas>
+		</div>
+		<div class="canvas__menu menu">
+			<input type="color" class="menu__color" id="color">
+			<input type="number" class="menu__line-width" placeholder="set thickness" id="lineWidth" value="1">
+			<div class="menu__btn" id="btn-block">
+				<button type="button" class="style-btn" id="square">Square</button>
+				<button type="button" class="style-btn" id="curve">Curve</button>
+				<button type="button" class="style-btn" id="oval">Oval</button>	
+				<button type="button" class="style-btn" id="line">Line</button>
+				<button type="button" class="style-btn" id="clean">Clean</button>
+			</div>	
+		</div>
+	</div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+	<script src="../Tests/node_modules/sinon/pkg/sinon.js"></script>
+    <script class="mocha-init">
+        mocha.setup('bdd');
+    </script>
+    <script>
+        const assert = chai.assert;
+    </script>
+    <script src="../HW1_Canvas/js/script.js"></script>
+    <script src="../HW1_Canvas/js/tests.js"></script>
+    <script class="mocha-exec">
+        mocha.run();
+    </script>
+</body>
+</html>

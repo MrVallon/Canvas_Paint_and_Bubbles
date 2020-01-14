@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>classworkr</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container canvas">
+		<div class="canvas__screen">
+			<canvas width="800" height="600" id="canvas" style="border: 1px solid black"></canvas>
+		</div>
+		<div class="canvas__menu menu">
+			<input type="color" class="menu__color" id="color">
+			<input type="number" class="menu__line-width" placeholder="set thickness" id="lineWidth" value="1">
+			<div class="menu__btn" id="btn-block">
+				<button type="button" class="style-btn" id="square">Square</button>
+				<button type="button" class="style-btn" id="curve">Curve</button>
+				<button type="button" class="style-btn" id="oval">Oval</button>	
+				<button type="button" class="style-btn" id="line">Line</button>
+				<button type="button" class="style-btn" id="clean">Clean</button>
+			</div>	
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
